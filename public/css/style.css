@@ -227,7 +227,8 @@
 }
 
 .code {
-    font-family: 'Source Code Pro', monospace;
+    font-family: Arial, Sans-Serif;
+    font-size: 24px;
 }
 
 .code-char.mistake-path {

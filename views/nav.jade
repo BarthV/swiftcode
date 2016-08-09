@@ -1,13 +1,11 @@
 .navbar.navbar-inverse
     .container
-        a.navbar-brand.logo(href='/') Swift<span class="inverse">CODE</span>
+        a.navbar-brand.logo(href='/') Paris<span class="inverse">Mechanical Keyboards</span>
         ul.nav.navbar-nav
             li(class= path=='/lobby' ? 'active' : '')
                 a(href='/lobby') Lobby
             li(class= path=='/game' ? 'active' : '')
                 a(href='/game') Game
-            li(class= path=='/about' ? 'active' : '')
-                a(href='/about') About
         if !user
             form.navbar-form.pull-right.form-parsley(action='/login', method='POST')
                 .form-group

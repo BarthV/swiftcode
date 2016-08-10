@@ -623,6 +623,7 @@
     var keys = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
     keys = keys.concat(_.map(keys, function(k) { return k.toUpperCase(); }));
     keys = keys.concat(['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']);
+    keys = keys.concat(['é', 'è', 'ê', 'ë', 'î', 'ï', 'û', 'ü', 'ù', 'â', 'ä', 'à', 'ô', 'ï']);
     keys = keys.concat(['`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '[', '{', ']', '}', '\\', '|', '\'', '"', ';', ':', '/', '?', '.', '>', ',', '<']);
     keys = keys.concat(['enter', 'space', 'shift+space', 'shift+enter']);
 

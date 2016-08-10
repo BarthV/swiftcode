@@ -6,18 +6,20 @@ block content
             .row
                 .col-md-1
                 .col-md-10
-                    h2 How Swift Are You?
+                    h2 Vous voulez vous mesurer aux plus grands ?
                     p.
-                        Establish yourself to join the ranks of the swiftest!
-                        Just choose a username and password to begin.
-                        Or, if you don't care about saving progress,
-                        <a href="/playnow"><span class="label label-success">play now!</span></a>
+                        Enregistrez vos performances et rejoingez les rangs des meilleurs !
+                    p.
+                        Choisissez un login et un mot de passe ( >= 8 caractères) pour commencer.
+                    p.
+                        Ou si vous n'avez rien à faire des scores, ni de votre historique 
+                        <a href="/playnow"><span class="label label-success">jouez ici!</span></a>
                 .col-md-1
             form.form-signup.form-parsley(action='/create-account', method='POST')
                 .form-group
-                    input.form-control.form-username(type='text', placeholder='Username', name='username', autofocus, data-required='true', data-rangelength='[2, 32]', data-placement='right')
+                    input.form-control.form-username(type='text', placeholder='Identifiant', name='username', autofocus, data-required='true', data-rangelength='[2, 32]', data-placement='right')
                 .form-group
-                    input.form-control.form-password(type='password', placeholder='Password', name='password', data-required='true', data-minlength='8', data-placement='right')
+                    input.form-control.form-password(type='password', placeholder='Mot de passe', name='password', data-required='true', data-minlength='8', data-placement='right')
                 .form-group
-                    input.form-control.form-repeatpassword(type='password', placeholder='Repeat Password', data-required='true', data-equalto='.form-password', data-placement='right')
+                    input.form-control.form-repeatpassword(type='password', placeholder='Répétez le mot de passe', data-required='true', data-equalto='.form-password', data-placement='right')
                 button.btn.btn-large.btn-primary.btn-block(type='submit') Sign up
